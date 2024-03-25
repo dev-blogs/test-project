@@ -18,5 +18,4 @@ public class DemoApplication {
 	public String hello(@RequestParam(value = "name", defaultValue = "test message") String name) {
 		return String.format("%s", name);
 	}
-
 }
