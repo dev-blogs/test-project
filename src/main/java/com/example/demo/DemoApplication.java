@@ -16,6 +16,7 @@ public class DemoApplication {
 
 	@GetMapping("/test")
 	public String hello(@RequestParam(value = "name", defaultValue = "test message") String name) {
+		System.out.println("test logger");
 		return String.format("%s", name);
 	}
 }
